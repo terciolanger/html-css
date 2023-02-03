@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/work-sans');
+        body{
+            font-family: 'work sans', Arial, Helvetica, 'sans-serif';
+            /*
+            Tamanhos de Fontes: 
+            Medidas Absolutas:
+            cm,mm,in,px,pt,pc (Centímetro, Milímetro, Polegada, Pixel, (Ponto e Paica) são medias de papel) (A W3C recomenda o uso do px) 
+            (font-size:16px; é o normal. Que é igual a 1 em. Melhor usar o em, porque trabalha com % da fonte padrão, bom para mostrar em uma TV, celar etc.)          
+            Madidas Relativas:
+            em,ex,rem,vw, vh, % (em é Relativo a altura do M maiusculo, ex é o tamanho da altura x da fonte), (rem Root configurado, vm largura da tela, vh altura da tela)
+            (A W3C recomenda o uso do em) */ 
+            /* font-size: 1.2em;
+            font-weight: bold  ; peso da fonte (lighter, normal, bold, bolder    
+            font-style: italic; */ 
+        }
+        h1, h2{
+            /*
+            Odem do shorhand:
+            1º font-style: italic;
+            2º font-weight: bolder;
+            3º font-size: 3em;
+            4º font-family: 'work sans',sans-serif; */           
+            /*shorthand font "simplificar" vai condensar todas as configurações nessa ordem
+            - font-style depois font-size: 3em depois font-size e por último font-family*/
+            font: italic bolder 3em 'work sans', sans-serif; /*shorthand font, faz todas juntas*/
+
+            /*text-decoration:underline;*/
+           
+        }          
+       
+        /*h1,h2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }*/        
+    </style>
+</head>
+<body>
+    <h1>AAA Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet a impedit voluptate quisquam fugit aliquam adipisci fuga quos doloremque perferendis corporis, harum quidem dolores? Praesentium quos vero unde quas recusandae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, quo dignissimos excepturi hic ipsum quia ut consectetur in. Debitis numquam, vero quas officia eius velit mollitia animi laboriosam in delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur esse voluptatum quod totam sit, quibusdam vitae eligendi accusamus modi labore magnam sapiente quam culpa velit, nobis fugit! Sapiente, soluta saepe? </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia beatae, commodi incidunt distinctio, voluptatibus aperiam error atque fuga modi repudiandae praesentium vitae. Deserunt quaerat, possimus quos vel nobis quo officiis?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis illo vero, explicabo quas nulla sed ea rem nemo commodi officiis beatae quae quibusdam animi architecto neque voluptatum quod non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laboriosam molestiae sit labore odit nobis sed? Saepe praesentium debitis nostrum aut dolorum, ipsam, nemo commodi quia eius error obcaecati repellendus?</p>
+    
+</body>
+</html>

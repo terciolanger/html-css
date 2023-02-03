@@ -1,0 +1,70 @@
+border-width: 10px;
+border-style: solid;
+border-color: red;*/
+/*display: block;*/
+border: 10px solid red;
+
+border-width: define o tamanho da borda;
+border-style: determina o estilo da borda;
+border-color: indica a cor utilizada na borda.
+
+border-width: 2px; 
+border-style: solid;
+border-color: darkseagreen;            
+border: 2px solid darkseagreen;       simplificar a configuração acima
+
+border: 20px solid black; 
+badding: 10px;
+
+border-image-source: url("borda.png"); 
+border-image-slice: 27;   /* Fatiar 
+border-image-repeat: repeat; 
+ /*border-image-repeat: stretch;*/
+Simplificado
+border-image: url("borda.png") 27 repeat;
+
+/*          margin-top:10px;  
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 10px; 
+            /*margin: 10px 10px 40px 10px;*/
+            margin: 10px auto 40px auto;
+            /*margin:auto;  centralizar, no caso de Caixa*/
+
+            padding-top: 10px; 
+            padding-right: 43px; 
+            padding-bottom: 10px;
+            padding-left: 10px; 
+
+            padding: 10px 43px 10px 10px;
+            Ordem top right bottom left - Relógio
+
+
+/*padding-top: 10px; 
+            padding-right: 10px; 
+            padding-bottom: 27px;
+            padding-left: 10px;*/
+            padding: 10px 10px 27px 10px;
+
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px; 
+
+
+<li><img src="" alt="tick"> <a href="#">1.5 - Cupcake</a>
+            <li><img src="" alt="tick"><a href="#">1.6 - Donut</a>
+            <li><img src="" alt="tick"><a href="#">3.0 - Eclair</a>
+            <li><img src="" alt="tick"><a href="#">2.2 - Froyd</a>
+            <li><img src="" alt="tick"><a href="#">2.3 - Gingerbread</a>
+            <li><img src="" alt="tick"><a href="#">3.0 - Honeycomb</a>
+            <li><img src="" alt="tick"><a href="#">4.0 - Ice Cream Sandwich</a>
+            <li><img src="" alt="tick"><a href="#">4.1 - Jelly Bean</a>
+            <li><img src="" alt="tick"><a href="#">4.4 - KitKat</a>
+            <li><img src="" alt="tick"><a href="#">5.0 - Lolipop</a>
+            <li><img src="" alt="tick"><a href="#">6.0 - Marshmallow</a>
+            <li><img src="" alt="tick"><a href="#">7.0 - Nougat</a>
+            <li><img src="" alt="tick"><a href="#">8.0 - Oreo</a>
+            <li><img src="" alt="tick"><a href="#">9.0 - Pie</a> 
+
+<div id="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></p>

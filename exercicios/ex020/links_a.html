@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;        
+        }
+        a{
+            color: red;
+            text-decoration: none; 
+            font-weight: bold;   
+        }
+        /* Seletores Personalizados
+        # é iguaal a id
+        . é igual a class
+        : Pseudo Classes 
+        :: pseudo element
+        > é childrem (filho)
+        */
+        /*Pseudo Classe*/
+        a:visited{
+            color: darkred;    
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;    
+        }
+        /*Pseudo Classe*/
+
+        
+        .especial::before{
+            content:  '☛';
+        }
+        .especial::after{
+            content: '☚' ; 
+        }
+        .especial{
+            background-color: darkred;
+            color: white;
+        }
+        
+        /*Pseudo Elementos*/
+        /*a::before{
+            content:  '☛';
+        }
+        a::after{ /*Pseudo Elementos ::*/
+            /*content: ' (link)';
+            text-decoration: none;
+            font-weight: normal;
+            color:darkgrey;
+            content:  '☚' ;       
+        } */
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>  
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/cursoemvideo" target="_blank" rel="external">Canal do Youtube</a></li>
+        <li><a href="https://www.supervasco.com" target="_blank" rel="external" class="especial">Sites do Curso em Vídeo</a></li>
+    </ul>  
+</body>
+</html>
