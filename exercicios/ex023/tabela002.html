@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabelas grandes semânticas</title>
+    <style>
+       body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+
+        thead, th {
+            background-color: #e6e0e0;  
+            border: 2px solid gray;  
+            padding: 3px;         
+        } 
+
+        table, td {                              
+           border-collapse: collapse;
+           width: 550px; 
+           text-align: center; 
+           border: 2px solid gray;
+           padding: 3px;                            
+        }                      
+
+        .fmenor{
+            font-size: 0.8em;            
+        } 
+
+        .bord{            
+            border-bottom: hidden;
+        } 
+
+        .cor1 {
+            color: blue;
+        }
+
+        .cor2 {
+            color: green;
+        }
+
+        tfoot{
+            background-color: #e6e0e0;      
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>    
+    <!-- 
+        Anatomia para tabelas grandes
+         table 
+            thead
+                tr, td, th
+            tbody
+                tr, td,th
+            tfoot 
+                tr, td, th       
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Estado</th>
+                <th class="bord">População</th>                
+                <th class="bord">População</th>
+                <th rowspan="2">Mudança</th>                
+            </tr>
+            <tr>
+                <th class="fmenor">(Censo de 2010)</th> 
+                <th class="fmenor">(Prévia 2022)</th>                
+            </tr>
+        </thead>  
+        
+        <tbody>
+            <tr>
+                <td class="cor1">São Paulo</td> 
+                <td>41.262.199</td>
+                <td>46.024.937</td>
+                <td class="cor2">+11.5%</td>                   
+            </tr>
+
+            <tr>
+                <td class="cor1">Minas Gerais</td> 
+                <td>19.597.330</td>
+                <td>20.732.660</td>
+                <td class="cor2">+5.8%</td>                   
+            </tr>
+
+            <tr>
+                <td class="cor1">Rio de Janeiro</td> 
+                <td>15.989.929</td>
+                <td>16.615.526</td>
+                <td class="cor2">+3.9%</td>                   
+            </tr>
+
+            <tr>
+                <td class="cor1">Bahia</td> 
+                <td>14.016.906</td>
+                <td>14.659.023</td>
+                <td class="cor2">+4.6%</td>                   
+            </tr>
+    
+            <tr>
+                <td class="cor1">Paraná</td> 
+                <td>10.444.526</td>
+                <td>11.835.379</td>
+                <td class="cor2">+13.3%</td>                   
+            </tr>
+    
+            <tr>
+                <td class="cor1">Rio Grande do Sul</td> 
+                <td>10.693.929</td>
+                <td>11.088.065</td>
+                <td class="cor2">+3.7%</td>                   
+            </tr> 
+            
+            <tr>
+                <td class="cor1">Pernambuco</td> 
+                <td>8.796.448</td>
+                <td>9.051.113</td>
+                <td class="cor2">+2.9%</td>                   
+            </tr> 
+
+            <tr>
+                <td class="cor1">Ceará</td> 
+                <td>8.452.381</td>
+                <td>8.936.431</td>
+                <td class="cor2">+5.7%</td>                   
+            </tr>
+
+            <tr>
+                <td class="cor1">Pará</td> 
+                <td>7.581.051</td>
+                <td>8.442.962</td>
+                <td class="cor2">+11.4%</td>                   
+            </tr>
+
+            <tr>
+                <td class="cor1">Santa Catarina</td> 
+                <td>6.248.436</td>
+                <td>7.762.154</td>
+                <td class="cor2">+24.2%</td>                   
+            </tr>
+                                    
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th rowspan="2">Totais </th>
+                <th class="fmenor">Total População 2010</th>
+                <th class="fmenor">Total População 2022</th>
+                <th class="fmenor">Total de Acréscimo</th>
+                
+            </tr>
+
+            <tr>
+                <td>143.083.135</td>
+                <td>155.148.250</td> 
+                <td>12.065.115</td>               
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
