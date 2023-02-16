@@ -9,21 +9,27 @@
        body {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1em;
-        }
+        }               
 
         thead, th {
             background-color: #e6e0e0;  
             border: 2px solid gray;  
-            padding: 3px;         
+            padding: 3px;   
+            text-align: center;                 
         } 
 
         table, td {                              
            border-collapse: collapse;
-           width: 550px; 
-           text-align: center; 
+           width: 650px;            
            border: 2px solid gray;
-           padding: 3px;                            
+           padding: 3px; 
+           text-align: center; 
+                                      
         }                      
+
+        .format {
+            text-align: left;
+        }
 
         .fmenor{
             font-size: 0.8em;            
@@ -31,6 +37,10 @@
 
         .bord{            
             border-bottom: hidden;
+        } 
+
+        .bord2{            
+            border-top: hidden;
         } 
 
         .cor1 {
@@ -76,70 +86,70 @@
         
         <tbody>
             <tr>
-                <td class="cor1">São Paulo</td> 
+                <td class="cor1 format"> <img src="imagens/bandeirasp.png" alt="bandeira de sp"> São Paulo</td> 
                 <td>41.262.199</td>
                 <td>46.024.937</td>
                 <td class="cor2">+11.5%</td>                   
             </tr>
 
             <tr>
-                <td class="cor1">Minas Gerais</td> 
+                <td class="cor1 format"><img src="imagens/bandeiramg.png" alt="bandeira de mg"> Minas Gerais</td> 
                 <td>19.597.330</td>
                 <td>20.732.660</td>
                 <td class="cor2">+5.8%</td>                   
             </tr>
 
             <tr>
-                <td class="cor1">Rio de Janeiro</td> 
+                <td class="cor1 format"><img src="imagens/bandeirarj.png" alt="bandeira rj"> Rio de Janeiro</td> 
                 <td>15.989.929</td>
                 <td>16.615.526</td>
                 <td class="cor2">+3.9%</td>                   
             </tr>
 
             <tr>
-                <td class="cor1">Bahia</td> 
+                <td class="cor1 format"><img src="imagens/bandeiraba.png" alt="bandeira ba"> Bahia</td> 
                 <td>14.016.906</td>
                 <td>14.659.023</td>
                 <td class="cor2">+4.6%</td>                   
             </tr>
     
             <tr>
-                <td class="cor1">Paraná</td> 
+                <td class="cor1 format"><img src="imagens/bandeirapr.png" alt="bandeira pr"> Paraná</td> 
                 <td>10.444.526</td>
                 <td>11.835.379</td>
                 <td class="cor2">+13.3%</td>                   
             </tr>
     
             <tr>
-                <td class="cor1">Rio Grande do Sul</td> 
+                <td class="cor1 format"><img src="imagens/bandeirars.png" alt="bandeira rs"> Rio Grande do Sul</td> 
                 <td>10.693.929</td>
                 <td>11.088.065</td>
                 <td class="cor2">+3.7%</td>                   
             </tr> 
             
             <tr>
-                <td class="cor1">Pernambuco</td> 
+                <td class="cor1 format"><img src="imagens/bandeirape.png" alt="bandeira pe"> Pernambuco</td> 
                 <td>8.796.448</td>
                 <td>9.051.113</td>
                 <td class="cor2">+2.9%</td>                   
             </tr> 
 
             <tr>
-                <td class="cor1">Ceará</td> 
+                <td class="cor1 format"><img src="imagens/bandeirace.png" alt="bandeira ce"> Ceará</td> 
                 <td>8.452.381</td>
                 <td>8.936.431</td>
                 <td class="cor2">+5.7%</td>                   
             </tr>
 
             <tr>
-                <td class="cor1">Pará</td> 
+                <td class="cor1 format"><img src="imagens/bandeirapa.png" alt="bandeira pa"> Pará</td> 
                 <td>7.581.051</td>
                 <td>8.442.962</td>
                 <td class="cor2">+11.4%</td>                   
             </tr>
 
             <tr>
-                <td class="cor1">Santa Catarina</td> 
+                <td class="cor1 format"><img src="imagens/bandeirasc.png" alt="bandeira sc"> Santa Catarina</td> 
                 <td>6.248.436</td>
                 <td>7.762.154</td>
                 <td class="cor2">+24.2%</td>                   
@@ -149,17 +159,17 @@
 
         <tfoot>
             <tr>
-                <th rowspan="2">Totais </th>
-                <th class="fmenor">Total População 2010</th>
-                <th class="fmenor">Total População 2022</th>
-                <th class="fmenor">Total de Acréscimo</th>
+                <th rowspan="2" class="cor1">Totais </th>
+                <th class="fmenor cor1">Total População 2010</th>
+                <th class="fmenor cor1">Total População 2022</th>
+                <th class="fmenor cor1">Total de Acréscimo</th>
                 
             </tr>
 
             <tr>
-                <td>143.083.135</td>
-                <td>155.148.250</td> 
-                <td>12.065.115</td>               
+                <td class="bord2"><strong>143.083.135</strong></td>
+                <td class="bord2"><strong>155.148.250</strong></td> 
+                <td class="bord2"><strong>12.065.115</strong></td>               
             </tr>
         </tfoot>
     </table>
