@@ -15,17 +15,23 @@
             background-color: #e6e0e0;  
             border: 2px solid gray;  
             padding: 3px;   
-            text-align: center;                 
+            text-align: center;                            
         } 
 
         table, td {                              
-           border-collapse: collapse;
-           width: 650px;            
+           border-collapse: collapse;  
            border: 2px solid gray;
-           padding: 3px; 
-           text-align: center; 
-                                      
-        }                      
+           padding: 3px;                 
+           text-align: center;                                       
+        }      
+
+        .col1 {
+            width: 70px;
+        }  
+
+        .col2 {
+            width: 180px;
+        }                            
 
         .format {
             text-align: left;
@@ -43,6 +49,10 @@
             border-top: hidden;
         } 
 
+        .bord3{
+            border-left: hidden; 
+        }
+
         .cor1 {
             color: blue;
         }
@@ -52,7 +62,7 @@
         }
 
         tfoot{
-            background-color: #e6e0e0;      
+            background-color: #e6e0e0;                      
         }
 
     </style>
@@ -75,7 +85,8 @@
         <caption>Pupulação das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th rowspan="2" scope="col" style="width: 800px">Estado</th>
+                <th rowspan="0" scope="col" class="col1">Posição</th>
+                <th rowspan="2" scope="col" class="col2">Estado</th>
                 <th class="bord" scope="col">População</th>                
                 <th class="bord" scope="col">População</th>
                 <th rowspan="2" scope="col">Mudança</th>                
@@ -88,6 +99,7 @@
         
         <tbody>
             <tr>
+                <td>1</td>
                 <td class="cor1 format"> <img src="imagens/bandeirasp.png" alt="bandeira de sp"> São Paulo</td> 
                 <td>41.262.199</td>
                 <td>46.024.937</td>
@@ -95,6 +107,7 @@
             </tr>
 
             <tr>
+                <td>2</td>
                 <td class="cor1 format"><img src="imagens/bandeiramg.png" alt="bandeira de mg"> Minas Gerais</td> 
                 <td>19.597.330</td>
                 <td>20.732.660</td>
@@ -102,6 +115,7 @@
             </tr>
 
             <tr>
+                <td>3</td>
                 <td class="cor1 format"><img src="imagens/bandeirarj.png" alt="bandeira rj"> Rio de Janeiro</td> 
                 <td>15.989.929</td>
                 <td>16.615.526</td>
@@ -109,6 +123,7 @@
             </tr>
 
             <tr>
+                <td>4</td>
                 <td class="cor1 format"><img src="imagens/bandeiraba.png" alt="bandeira ba"> Bahia</td> 
                 <td>14.016.906</td>
                 <td>14.659.023</td>
@@ -116,6 +131,7 @@
             </tr>
     
             <tr>
+                <td>5</td>
                 <td class="cor1 format"><img src="imagens/bandeirapr.png" alt="bandeira pr"> Paraná</td> 
                 <td>10.444.526</td>
                 <td>11.835.379</td>
@@ -123,6 +139,7 @@
             </tr>
     
             <tr>
+                <td>6</td>    
                 <td class="cor1 format"><img src="imagens/bandeirars.png" alt="bandeira rs"> Rio Grande do Sul</td> 
                 <td>10.693.929</td>
                 <td>11.088.065</td>
@@ -130,6 +147,7 @@
             </tr> 
             
             <tr>
+                <td>7</td>    
                 <td class="cor1 format"><img src="imagens/bandeirape.png" alt="bandeira pe"> Pernambuco</td> 
                 <td>8.796.448</td>
                 <td>9.051.113</td>
@@ -137,6 +155,7 @@
             </tr> 
 
             <tr>
+                <td>8</td>
                 <td class="cor1 format"><img src="imagens/bandeirace.png" alt="bandeira ce"> Ceará</td> 
                 <td>8.452.381</td>
                 <td>8.936.431</td>
@@ -144,6 +163,7 @@
             </tr>
 
             <tr>
+                <td>9</td>
                 <td class="cor1 format"><img src="imagens/bandeirapa.png" alt="bandeira pa"> Pará</td> 
                 <td>7.581.051</td>
                 <td>8.442.962</td>
@@ -151,17 +171,155 @@
             </tr>
 
             <tr>
+                <td>10</td>
                 <td class="cor1 format"><img src="imagens/bandeirasc.png" alt="bandeira sc"> Santa Catarina</td> 
                 <td>6.248.436</td>
                 <td>7.762.154</td>
                 <td class="cor2">+24.2%</td>                   
+            </tr>
+
+            <tr>
+                <td>11</td>
+                <td class="cor1 format"><img src="imagens/bandeirago.png" alt="bandeira go"> Goias</td> 
+                <td>6.003.788</td>
+                <td>6.950.976</td>
+                <td class="cor2">+15.8%</td>                   
+            </tr>
+
+            <tr>
+                <td>12</td>
+                <td class="cor1 format"><img src="imagens/bandeirama.png" alt="bandeira ma"> Maranhão</td> 
+                <td>6.574.789</td>
+                <td>6.800.605</td>
+                <td class="cor2">+3.4%</td>                   
+            </tr>
+
+            <tr>
+                <td>13</td>
+                <td class="cor1 format"><img src="imagens/bandeiraes.png" alt="bandeira es"> Espírito Santo</td> 
+                <td>3.514.952</td>
+                <td>4.108.508</td>
+                <td class="cor2">+13.1%</td>                   
+            </tr>
+
+            <tr>
+                <td>14</td>
+                <td class="cor1 format"><img src="imagens/bandeirapb.png" alt="bandeira pb"> Paraíba</td> 
+                <td>3.766.528</td>
+                <td>4.030.961</td>
+                <td class="cor2">+7.0%</td>                   
+            </tr>
+
+            <tr>
+                <td>15</td>
+                <td class="cor1 format"><img src="imagens/bandeiraam.png" alt="bandeira am"> Amazonas</td> 
+                <td>3.483.985</td>
+                <td>3.952.262</td>
+                <td class="cor2">+13.4%</td>                   
+            </tr>
+
+            <tr>
+                <td>16</td>
+                <td class="cor1 format"><img src="imagens/bandeiramt.png" alt="bandeira mt"> Mato Grosso</td> 
+                <td>3.035.122</td>
+                <td>3.784.239</td>
+                <td class="cor2">+24.7%</td>                   
+            </tr>
+
+            <tr>
+                <td>17</td>
+                <td class="cor1 format"><img src="imagens/bandeirarn.png" alt="bandeira rn"> Rio Grande do Norte</td> 
+                <td>3.168.027</td>
+                <td>3.303.953</td>
+                <td class="cor2">+4.3%</td>                   
+            </tr>
+
+            <tr>
+                <td>18</td>
+                <td class="cor1 format"><img src="imagens/bandeirapi.png" alt="bandeira pi"> Piauí</td> 
+                <td>3.118.360</td>
+                <td>3.270.174</td>
+                <td class="cor2">+4.9%</td>                   
+            </tr>
+
+            <tr>
+                <td>19</td>
+                <td class="cor1 format"><img src="imagens/bandeiraal.png" alt="bandeira al"> Alagoas</td> 
+                <td>3.120.494</td>
+                <td>3.125.254</td>
+                <td class="cor2">+0.2%</td>                   
+            </tr>
+
+            <tr>
+                <td>20</td>
+                <td class="cor1 format"><img src="imagens/bandeiradf.png" alt="bandeira df"> Distrito Federal</td> 
+                <td>2.570.160</td>
+                <td>2.923.369</td>
+                <td class="cor2">+13.7%</td>                   
+            </tr>
+
+            <tr>
+                <td>21</td>
+                <td class="cor1 format"><img src="imagens/bandeirams.png" alt="bandeira ms"> Mato Grosso do Sul</td> 
+                <td>2.449.024</td>
+                <td>2.833.742</td>
+                <td class="cor2">+15.7%</td>                   
+            </tr>
+
+            <tr>
+                <td>22</td>
+                <td class="cor1 format"><img src="imagens/bandeirase.png" alt="bandeira se"> Sergipe</td> 
+                <td>2.068.017</td>
+                <td>2.211.868</td>
+                <td class="cor2">+7.0%</td>                   
+            </tr>
+
+            <tr>
+                <td>23</td>
+                <td class="cor1 format"><img src="imagens/bandeiraro.png" alt="bandeira ro"> Rondônia</td> 
+                <td>1.562.409</td>
+                <td>1.616.379</td>
+                <td class="cor2">+3.5%</td>                   
+            </tr>
+
+            <tr>
+                <td>24</td>
+                <td class="cor1 format"><img src="imagens/bandeirato.png" alt="bandeira to"> Tocantins</td> 
+                <td>1.383.445</td>
+                <td>1.584.306</td>
+                <td class="cor2">+14.5%</td>                   
+            </tr>
+
+            <tr>
+                <td>25</td>
+                <td class="cor1 format"><img src="imagens/bandeiraac.png" alt="bandeira ac"> Acre</td> 
+                <td>733.559</td>
+                <td>829.780</td>
+                <td class="cor2">+13.1%</td>                   
+            </tr>
+
+            <tr>
+                <td>26</td>
+                <td class="cor1 format"><img src="imagens/bandeiraap.png" alt="bandeira ap"> Amapá</td> 
+                <td>669.526</td>
+                <td>774.268</td>
+                <td class="cor2">+15.6%</td>                   
+            </tr>
+
+            <tr>
+                <td>27</td>
+                <td class="cor1 format"><img src="imagens/bandeirarr.png" alt="bandeira rr"> Roraima</td> 
+                <td>450.479</td>
+                <td>634.805</td>
+                <td class="cor2">+40.9%</td>                   
             </tr>
                                     
         </tbody>
 
         <tfoot>
             <tr>
-                <th rowspan="2" class="cor1" scope="row">Totais</th>
+                <th rowspan="0"></th>
+                <th rowspan="2" class="cor1 bord3" scope="row">Totais</th>
                 <th class="fmenor cor1" scope="row">Total População 2010</th>
                 <th class="fmenor cor1" scope="row">Total População 2022</th>
                 <th class="fmenor cor1" scope="row">Total de Acréscimo</th>
