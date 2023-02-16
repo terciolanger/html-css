@@ -62,6 +62,7 @@
     <!-- 
         Anatomia para tabelas grandes
          table 
+            caption legenda da tabela
             thead
                 tr, td, th
             tbody
@@ -71,16 +72,17 @@
     -->
 
     <table>
+        <caption>Pupulação das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th rowspan="2">Estado</th>
-                <th class="bord">População</th>                
-                <th class="bord">População</th>
-                <th rowspan="2">Mudança</th>                
+                <th rowspan="2" scope="col" style="width: 800px">Estado</th>
+                <th class="bord" scope="col">População</th>                
+                <th class="bord" scope="col">População</th>
+                <th rowspan="2" scope="col">Mudança</th>                
             </tr>
             <tr>
-                <th class="fmenor">(Censo de 2010)</th> 
-                <th class="fmenor">(Prévia 2022)</th>                
+                <th class="fmenor" scope="col">(Censo de 2010)</th> 
+                <th class="fmenor" scope="col">(Prévia 2022)</th>                
             </tr>
         </thead>  
         
@@ -159,10 +161,10 @@
 
         <tfoot>
             <tr>
-                <th rowspan="2" class="cor1">Totais </th>
-                <th class="fmenor cor1">Total População 2010</th>
-                <th class="fmenor cor1">Total População 2022</th>
-                <th class="fmenor cor1">Total de Acréscimo</th>
+                <th rowspan="2" class="cor1" scope="row">Totais</th>
+                <th class="fmenor cor1" scope="row">Total População 2010</th>
+                <th class="fmenor cor1" scope="row">Total População 2022</th>
+                <th class="fmenor cor1" scope="row">Total de Acréscimo</th>
                 
             </tr>
 
