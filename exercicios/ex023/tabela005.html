@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #e9e3e3;
+            border-collapse: collapse; 
+            text-align: center; 
+            font:bold;     
+        }
+
+        caption {
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .cnome{
+            background-color: #dff3f3;    
+        }
+
+        .cgroup {
+            background-color: #f0f0b8;
+        }
+            
+        
+    </style>
+</head>
+
+<body>
+    <h1>Exercício de Tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome"> <!-- Primeira coluna -->
+            <col class="cgroup" span="2"> <!-- span 2 é para segunda e terceira coluna -->
+            <!--<col class="csexo">
+            <col class="cidade"> -->
+            <col class="cprof">                
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <thead>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        </thead>  
+
+        <tr>
+            <td>Ana Maria Andrade</td>
+            <td>Feminino</td>
+            <td>33</td>
+            <td>Analista de Sistemas</td>
+        </tr>
+
+        <tr>
+            <td>João da Silva</td>
+            <td>Masculino</td>
+            <td>25</td>
+            <td>Analista de Suporte</td>
+        </tr>
+
+        <tr>
+            <td>Marisa Clara Guimarães</td>
+            <td>Feminino</td>
+            <td>24</td>
+            <td>Programador Junior</td>
+        </tr>
+
+        <tr>
+            <td>Pedro de Lara</td>
+            <td>Masculino</td>
+            <td>28</td>
+            <td>Analista de Redes</td>
+        </tr>
+
+        <tr>
+            <td>Cintia Maria de Souza</td>
+            <td>Feminino</td>
+            <td>27</td>
+            <td>Analista de IA</td>
+        </tr>
+
+        <tr>
+            <td>Jeferson Mota</td>
+            <td>Masculino</td>
+            <td>30</td>
+            <td>Programador Senior</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
