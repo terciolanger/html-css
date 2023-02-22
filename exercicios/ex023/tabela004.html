@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabela Completa</title>
+
+    <style>        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        thead {
+            background-color: #e9e3e3;
+            border-collapse: collapse; 
+            text-align: center; 
+            font:bold;     
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;              
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            height: 100px;
+            text-align: center;            
+        }
+
+        caption {
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+        } 
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Exemplo de Tabela Completa</caption>
+        <caption>Filmes Favoritos</caption>
+       
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>            
+                <th colspan="3" scope="colgroup">Filmes</th> 
+            </tr>                      
+        </thead> 
+
+        <!--Este é o código do professor-->
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th> <!--rowspan="3" são 3 linhas para crescer de Mulheres-->
+                <td>Ana Maria Santos</td>                
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>    
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr> 
+            
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th> 
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>         
+            <tr>
+                <td>Fabiano Motta</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                 <td>Toy Store</td>
+            </tr> 
+        </tbody> <!--Este é o fim do código do professor-->
+
+       <!-- Este é o meu código
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="col">Mulheres</th>                
+            </tr>     
+            <tr>
+                <td>Ana Maria Santos</td>                
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>            
+        
+            <tr>
+                <th rowspan="4" scope="col">Homens</th> 
+            </tr>         
+            <tr>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>         
+            <tr>
+                <td>Fabiano Motta</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+             <td>Toy Store</td>
+            </tr> 
+    </tbody>
+    Este é o fim do meu código -->
+    </table>
+</body>
+</html>
