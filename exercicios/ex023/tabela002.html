@@ -8,16 +8,9 @@
 
     <style>
         body {
-             font-family: Arial, Helvetica, sans-serif;            
-             font-size: 1em;         
-        } 
-
-        tbody > tr:nth-child(odd) { /*2n pula 1 linha ou 2n-1 ou odd é linha impar, even é par*/
-            background-color: #e6eed4
-        } 
-        tbody > tr:nth-child(even){
-             background-color: aliceblue;             
-        }
+            font-family: Arial, Helvetica, sans-serif;            
+            font-size: 1em;         
+        }        
  
         caption{
              font-size: 1.4em;
@@ -36,12 +29,7 @@
         .cabfixo {
             position: sticky;
             top:0;    
-       }
-        
-        /*thead > tr > th {
-            position: sticky;
-            top:0;            
-        }*/
+       }       
 
         table { 
              width: 800px;                      
@@ -50,85 +38,93 @@
              position: relative; /*cabeçalho fixo*/
         } 
 
+        tbody > tr:nth-child(odd) { /*2n pula 1 linha ou 2n-1 ou odd é linha impar, even é par*/
+            background-color: #e6eed4
+        } 
+        tbody > tr:nth-child(even){
+             background-color: aliceblue;             
+        } 
+
+        thead th:nth-child(4n+3){  
+            border-bottom: hidden;            
+        }
+
+        thead th:nth-child(4n+4){  
+            border-bottom: hidden;            
+        }
+        /*------------------------*/        
+
+        /*Seletor CSS por coluna, onde 'a' é o número total de colunas da tabela e 'b' é a posição ordinal desta coluna na tabela*/     
+        td:nth-child(6n+1) {
+            width: 70px;   
+        }
+        
+        td:nth-child(6n+2) {
+            color:blue;
+            text-align: left;
+            font-size: 0.9em; 
+            width: 160px;                     
+        } 
+
+        td:nth-child(6n+3) {
+            width: 130px; 
+        } 
+
+        td:nth-child(6n+4) {
+            width: 130px; 
+        }       
+
+        td:nth-child(6n+5) {
+            width: 100px; 
+            color: green;        
+        }
+
+        td:nth-child(6n+6) {
+            width: 100px; 
+        } 
+
         td, th {
             border: 2px solid  rgb(163, 162, 162); 
             padding: 3px;  
-        }               
- 
-        .col1 {
-             width: 70px;            
-        }  
- 
-        .col2 {
-             width: 160px;
-        }                            
- 
-        .format {
-             text-align: left;
-        }
- 
-        .fmenor {
-             font-size: 0.9em;            
-        } 
- 
-        .bord {            
-             border-bottom: hidden;
-        } 
- 
-        .bord2 {            
-             border-top: hidden;
-        } 
- 
-        .bord3 {
-             border-left: hidden; 
-        }
- 
-        .bord4 {
-             border-right: hidden;
-        }
- 
-        .fcor1 {
-             color: blue;            
-        }
- 
-        .fcor2 {
-             color: green;
-        } 
+        }          
 
-        /*-----------------------------*/
         .bcor {
             background-color: #dbd7d7;     
-        }                
+        } 
+
+        tfoot th:nth-child(4n+1){  
+            font-size: 1.3em; 
+                         
+        }
+
+        tfoot th:nth-child(n){               
+            border-bottom: hidden; 
+            color: darkblue;                     
+        }        
+
+        tfoot td:nth-child(n){               
+            color: rgb(139, 0, 35);
+            font-size: 0.9em;  
+            text-align: center;                  
+        }                             
  
      </style>
  </head>   
     
-<body>      
-    <!-- 
-        Anatomia para tabelas grandes
-         table 
-            caption legenda da tabela
-            thead
-                tr, td, th
-            tbody
-                tr, td,th
-            tfoot 
-                tr, td, th       
-    -->
-    
+<body>    
     <table>
         <caption><strong>População das Unidades Federativas do Brasil</strong></caption>
+
         <thead class="cabfixo">
-
             <tr>
-                <th rowspan="0" scope="col" class="col1">Posição</th>
-                <th rowspan="0" scope="col" class="col2">Estado</th>
-
-                <th class="bord" scope="col">População</th>            
-                <th class="bord" scope="col">População</th>
-
-                <th rowspan="0" scope="col">Mudança</th>  
-                <th rowspan="0" scope="col">% Total Pop.</th>            
+                <th rowspan="0" scope="col">Posição</th>
+                <th rowspan="0" scope="col">Estado</th>
+            
+                <th class="bord" scope="colgroup">População</th>
+                <th class="bord" scope="colgroup">População</th>
+            
+                <th rowspan="0" scope="col">Mudança</th>
+                <th rowspan="0" scope="col">% Total Pop.</th>
             </tr>
             
             <tr>
@@ -141,244 +137,244 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td class="fcor1 format fmenor"> <img src="imagens/bandeirasp.png" alt="bandeira de sp"> São Paulo</td> 
+                <td><img src="imagens/bandeirasp.png" alt="bandeira de sp"> São Paulo</td> 
                 <td>41.262.199</td>
                 <td>46.024.937</td>
-                <td class="fcor2">+11.5%</td>  
+                <td>+11.5%</td>  
                 <td>22.2%</td>                   
             </tr>
 
             <tr>
                 <td>2</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeiramg.png" alt="bandeira de mg"> Minas Gerais</td> 
+                <td><img src="imagens/bandeiramg.png" alt="bandeira de mg"> Minas Gerais</td> 
                 <td>19.597.330</td>
                 <td>20.732.660</td>
-                <td class="fcor2">+5.8%</td>  
+                <td>+5.8%</td>  
                 <td>10.0%</td>                 
             </tr>
 
             <tr>
                 <td>3</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirarj.png" alt="bandeira rj"> Rio de Janeiro</td> 
+                <td><img src="imagens/bandeirarj.png" alt="bandeira rj"> Rio de Janeiro</td> 
                 <td>15.989.929</td>
                 <td>16.615.526</td>
-                <td class="fcor2">+3.9%</td> 
+                <td>+3.9%</td> 
                 <td>8.0%</td>                  
             </tr>
 
             <tr>
                 <td>4</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeiraba.png" alt="bandeira ba"> Bahia</td> 
+                <td><img src="imagens/bandeiraba.png" alt="bandeira ba"> Bahia</td> 
                 <td>14.016.906</td>
                 <td>14.659.023</td>
-                <td class="fcor2">+4.6%</td>
+                <td>+4.6%</td>
                 <td>7.1%</td>                   
             </tr>
     
             <tr>
                 <td>5</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirapr.png" alt="bandeira pr"> Paraná</td> 
+                <td><img src="imagens/bandeirapr.png" alt="bandeira pr"> Paraná</td> 
                 <td>10.444.526</td>
                 <td>11.835.379</td>
-                <td class="fcor2">+13.3%</td> 
+                <td>+13.3%</td> 
                 <td>5.7%</td>                  
             </tr>
     
             <tr>
                 <td>6</td>    
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirars.png" alt="bandeira rs"> Rio Grande do Sul</td> 
+                <td><img src="imagens/bandeirars.png" alt="bandeira rs"> Rio Grande do Sul</td> 
                 <td>10.693.929</td>
                 <td>11.088.065</td>
-                <td class="fcor2">+3.7%</td>  
+                <td>+3.7%</td>  
                 <td>5.3%</td>                 
             </tr> 
             
             <tr>
                 <td>7</td>    
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirape.png" alt="bandeira pe"> Pernambuco</td> 
+                <td><img src="imagens/bandeirape.png" alt="bandeira pe"> Pernambuco</td> 
                 <td>8.796.448</td>
                 <td>9.051.113</td>
-                <td class="fcor2">+2.9%</td>  
+                <td>+2.9%</td>  
                 <td>4.4%</td>                 
             </tr> 
 
             <tr>
                 <td>8</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirace.png" alt="bandeira ce"> Ceará</td> 
+                <td><img src="imagens/bandeirace.png" alt="bandeira ce"> Ceará</td> 
                 <td>8.452.381</td>
                 <td>8.936.431</td>
-                <td class="fcor2">+5.7%</td> 
+                <td>+5.7%</td> 
                 <td>4.3%</td>                  
             </tr>
 
             <tr>
                 <td>9</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirapa.png" alt="bandeira pa"> Pará</td> 
+                <td><img src="imagens/bandeirapa.png" alt="bandeira pa"> Pará</td> 
                 <td>7.581.051</td>
                 <td>8.442.962</td>
-                <td class="fcor2">+11.4%</td>  
+                <td>+11.4%</td>  
                 <td>4.1%</td>                 
             </tr>
 
             <tr>
                 <td>10</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirasc.png" alt="bandeira sc"> Santa Catarina</td> 
+                <td><img src="imagens/bandeirasc.png" alt="bandeira sc"> Santa Catarina</td> 
                 <td>6.248.436</td>
                 <td>7.762.154</td>
-                <td class="fcor2">+24.2%</td>   
+                <td>+24.2%</td>   
                 <td>3.7%</td>                
             </tr>
 
             <tr>
                 <td>11</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirago.png" alt="bandeira go"> Goias</td> 
+                <td><img src="imagens/bandeirago.png" alt="bandeira go"> Goias</td> 
                 <td>6.003.788</td>
                 <td>6.950.976</td>
-                <td class="fcor2">+15.8%</td>  
+                <td>+15.8%</td>  
                 <td>3.3%</td>                
             </tr>
 
             <tr>
                 <td>12</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirama.png" alt="bandeira ma"> Maranhão</td> 
+                <td><img src="imagens/bandeirama.png" alt="bandeira ma"> Maranhão</td> 
                 <td>6.574.789</td>
                 <td>6.800.605</td>
-                <td class="fcor2">+3.4%</td> 
+                <td>+3.4%</td> 
                 <td>3.3%</td>                
             </tr>
 
             <tr>
                 <td>13</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeiraes.png" alt="bandeira es"> Espírito Santo</td> 
+                <td><img src="imagens/bandeiraes.png" alt="bandeira es"> Espírito Santo</td> 
                 <td>3.514.952</td>
                 <td>4.108.508</td>
-                <td class="fcor2">+13.1%</td>   
+                <td>+13.1%</td>   
                 <td>1.9%</td>
             </tr>
 
             <tr>
                 <td>14</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirapb.png" alt="bandeira pb"> Paraíba</td> 
+                <td><img src="imagens/bandeirapb.png" alt="bandeira pb"> Paraíba</td> 
                 <td>3.766.528</td>
                 <td>4.030.961</td>
-                <td class="fcor2">+7.0%</td>
+                <td>+7.0%</td>
                 <td>1.9%</td> 
             </tr>
 
             <tr>
                 <td>15</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeiraam.png" alt="bandeira am"> Amazonas</td> 
+                <td><img src="imagens/bandeiraam.png" alt="bandeira am"> Amazonas</td> 
                 <td>3.483.985</td>
                 <td>3.952.262</td>
-                <td class="fcor2">+13.4%</td> 
+                <td>+13.4%</td> 
                 <td>1.9%</td>               
             </tr>
 
             <tr>
                 <td>16</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeiramt.png" alt="bandeira mt"> Mato Grosso</td> 
+                <td><img src="imagens/bandeiramt.png" alt="bandeira mt"> Mato Grosso</td> 
                 <td>3.035.122</td>
                 <td>3.784.239</td>
-                <td class="fcor2">+24.7%</td> 
+                <td>+24.7%</td> 
                 <td>1.8%</td>                
             </tr>
 
             <tr>
                 <td>17</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirarn.png" alt="bandeira rn"> Rio Grande do Norte</td> 
+                <td><img src="imagens/bandeirarn.png" alt="bandeira rn"> Rio Grande do Norte</td> 
                 <td>3.168.027</td>
                 <td>3.303.953</td>
-                <td class="fcor2">+4.3%</td>
+                <td>+4.3%</td>
                 <td>1.6%</td>                
             </tr>
 
             <tr>
                 <td>18</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirapi.png" alt="bandeira pi"> Piauí</td> 
+                <td><img src="imagens/bandeirapi.png" alt="bandeira pi"> Piauí</td> 
                 <td>3.118.360</td>
                 <td>3.270.174</td>
-                <td class="fcor2">+4.9%</td>
+                <td>+4.9%</td>
                 <td>1.6%</td>                
             </tr>
 
             <tr>
                 <td>19</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeiraal.png" alt="bandeira al"> Alagoas</td> 
+                <td><img src="imagens/bandeiraal.png" alt="bandeira al"> Alagoas</td> 
                 <td>3.120.494</td>
                 <td>3.125.254</td>
-                <td class="fcor2">+0.2%</td>
+                <td>+0.2%</td>
                 <td>1.5%</td>                
             </tr>
 
             <tr>
                 <td>20</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeiradf.png" alt="bandeira df"> Distrito Federal</td> 
+                <td><img src="imagens/bandeiradf.png" alt="bandeira df"> Distrito Federal</td> 
                 <td>2.570.160</td>
                 <td>2.923.369</td>
-                <td class="fcor2">+13.7%</td> 
+                <td>+13.7%</td> 
                 <td>1.4%</td>                
             </tr>
 
             <tr>
                 <td>21</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirams.png" alt="bandeira ms"> Mato Grosso do Sul</td> 
+                <td><img src="imagens/bandeirams.png" alt="bandeira ms"> Mato Grosso do Sul</td> 
                 <td>2.449.024</td>
                 <td>2.833.742</td>
-                <td class="fcor2">+15.7%</td>
+                <td>+15.7%</td>
                 <td>1.4%</td>                
             </tr>
 
             <tr>
                 <td>22</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirase.png" alt="bandeira se"> Sergipe</td> 
+                <td><img src="imagens/bandeirase.png" alt="bandeira se"> Sergipe</td> 
                 <td>2.068.017</td>
                 <td>2.211.868</td>
-                <td class="fcor2">+7.0%</td> 
+                <td>+7.0%</td> 
                 <td>1.1%</td>                
             </tr>
 
             <tr>
                 <td>23</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeiraro.png" alt="bandeira ro"> Rondônia</td> 
+                <td><img src="imagens/bandeiraro.png" alt="bandeira ro"> Rondônia</td> 
                 <td>1.562.409</td>
                 <td>1.616.379</td>
-                <td class="fcor2">+3.5%</td> 
+                <td>+3.5%</td> 
                 <td>0.8%</td>                
             </tr>
 
             <tr>
                 <td>24</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirato.png" alt="bandeira to"> Tocantins</td> 
+                <td><img src="imagens/bandeirato.png" alt="bandeira to"> Tocantins</td> 
                 <td>1.383.445</td>
                 <td>1.584.306</td>
-                <td class="fcor2">+14.5%</td> 
+                <td>+14.5%</td> 
                 <td>0.8%</td>                
             </tr>
 
             <tr>
                 <td>25</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeiraac.png" alt="bandeira ac"> Acre</td> 
+                <td><img src="imagens/bandeiraac.png" alt="bandeira ac"> Acre</td> 
                 <td>733.559</td>
                 <td>829.780</td>
-                <td class="fcor2">+13.1%</td>   
+                <td>+13.1%</td>   
                 <td>0.4%</td>                
             </tr>
 
             <tr>
                 <td>26</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeiraap.png" alt="bandeira ap"> Amapá</td> 
+                <td><img src="imagens/bandeiraap.png" alt="bandeira ap"> Amapá</td> 
                 <td>669.526</td>
                 <td>774.268</td>
-                <td class="fcor2">+15.6%</td> 
+                <td>+15.6%</td> 
                 <td>0.4%</td>                
             </tr>
 
             <tr>
                 <td>27</td>
-                <td class="fcor1 format fmenor"><img src="imagens/bandeirarr.png" alt="bandeira rr"> Roraima</td> 
+                <td><img src="imagens/bandeirarr.png" alt="bandeira rr"> Roraima</td> 
                 <td>450.479</td>
                 <td>634.805</td>
-                <td class="fcor2">+40.9%</td> 
+                <td>+40.9%</td> 
                 <td>0.3%</td>                
             </tr>
                                     
@@ -386,19 +382,19 @@
 
         <tfoot class="bcor">
             <tr>
-                <th colspan="2" rowspan="0" class="fcor1 " scope="row">Totais</th>
+                <th colspan="2" rowspan="0" scope="row">Totais</th>
 
-                <th class="fmenor fcor1" scope="row">Total População 2010</th>
-                <th class="fmenor fcor1" scope="row">Total População 2022</th>
-                <th class="fmenor fcor1" scope="row">Total de Acréscimo</th>
+                <th scope="row">Total População 2010</th>
+                <th scope="row">Total População 2022</th>
+                <th scope="row">Total de Acréscimo</th>
                 
-                <th rowspan="0"></th>                 
+                <!--<th rowspan="0"></th>   -->              
             </tr>
 
             <tr>
-                <td class="bord2"><strong>190.755.799</strong></td>
-                <td class="bord2"><strong>207.883.699</strong></td> 
-                <td class="bord2"><strong>17.127.900</strong></td>                           
+                <td><strong>190.755.799</strong></td>
+                <td><strong>207.883.699</strong></td> 
+                <td><strong>17.127.900</strong></td>       
             </tr>
         </tfoot>
     </table>
