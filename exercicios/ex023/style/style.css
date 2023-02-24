@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #dbd7d7; /*cabeçalho*/    
+    --cor1: #a3a2a2; /*borda tabela*/
+    --cor2: #e6eed4; /*linha zebrada da tabela*/
+    --cor3: #f0f8ff; /*linha zebrada da tabela*/    
+    --cor4: #8b0023; /*totais rodapé*/    
+    }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;            
+    font-size: 1em;         
+}
+
+table { 
+    width: 800px;                      
+    border-collapse: collapse;                           
+    text-align: center; 
+    position: relative; /*cabeçalho fixo*/
+}        
+ 
+caption {
+    font-size: 1.4em;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}             
+/*----------------------------*/
+thead, th {           
+    background-color: var(--cor0);  
+    border: 2px solid var(--cor1);  
+    padding: 5px;   
+    text-align: center;                                     
+}       
+
+/*Fixar o cabeçalho, esse é o caminho, não funcionou direito*/  
+.cabfixo {
+    position: sticky;
+    top:0;
+} 
+
+thead tr:nth-child(n) {  
+    color:darkblue;  
+    font-size: 1.2em;        
+}
+
+thead th:nth-child(8n+3) {  
+    border-bottom: hidden;             
+}
+
+thead th:nth-child(8n+4) {  
+    border-bottom: hidden;               
+} 
+
+thead tr:nth-child(8n+2) {  
+    font-size: .9em;           
+}
+/*----------------------------*/
+
+tbody > tr:nth-child(odd) { /*2n pula 1 linha ou 2n-1 ou odd é linha impar, even é par*/
+    background-color: var(--cor2);
+} 
+
+tbody > tr:nth-child(even) {
+    background-color: var(--cor3); 
+}       
+/*------------------------*/ 
+/*Seletor CSS por coluna, onde 'a' é o número total de colunas da tabela e 'b' é a posição ordinal desta coluna na tabela*/     
+td:nth-child(6n+1) {
+    width: 70px;   
+}
+        
+td:nth-child(6n+2) {
+    color:blue;
+    text-align: left;
+    font-size: 0.9em; 
+    width: 160px;                     
+} 
+
+td:nth-child(6n+3) {
+    width: 150px; 
+} 
+
+td:nth-child(6n+4) {
+    width: 130px; 
+}       
+
+td:nth-child(6n+5) {
+    width: 100px; 
+    color: green;        
+}
+
+td:nth-child(6n+6) {
+    width: 100px; 
+} 
+
+td, th {
+    border: 2px solid var(--cor1); 
+    padding: 3px;  
+}    
+/*-------------------------*/ 
+.bcor {
+    background-color: var(--cor0);     
+}        
+
+tfoot th:nth-child(n) {               
+    border-bottom: hidden; 
+    color: darkblue; 
+    font-size: 1em;                    
+}        
+
+tfoot td:nth-child(n) {               
+    color: var(--cor4);
+    font-size: 1em;  
+    text-align: center;                 
+}  
+
+tfoot th:nth-child(4n+1) {  
+    font-size: 1.5em; 
+    border-bottom: 2px solid var(--cor1);                     
+}
+    
