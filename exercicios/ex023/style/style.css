@@ -119,4 +119,8 @@ tfoot th:nth-child(4n+1) {
     font-size: 1.5em; 
     border-bottom: 2px solid var(--cor1);                     
 }
+
+#container {
+    overflow-x:auto;     
+}
     
