@@ -7,14 +7,14 @@
 }
 
 img {
-    width: 94vw;    
+    width: 94vw;      
 }
 
 a {
     display: block;
-    background-color: darkred;
+    background-color: darkred;    
     color: white;
-    padding: 20px;
+    padding: 20px;    
     text-align: center;
     font-weight: bolder;
     text-decoration: none;
