@@ -7,8 +7,8 @@
 }
 
 body {
-    height: 97vh;
-    width: 97vw;
+    height: 100vh;
+    width: 100vw;
     background: url('../imagens/fundomadeira.jpg') no-repeat top center;
     background-size: cover; 
     background-attachment: fixed;   
@@ -16,7 +16,14 @@ body {
 
 main {
     position: relative;
-    height: 97vh;
+    height: 100vh;
+}
+
+iframe {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
 }
 
 #telefone {
@@ -26,18 +33,16 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     height: 627px;
-    width: 311px;    
-    
-}
+    width: 311px;      
+} 
 
 #tela {
-    position: absolute;    
+    position:absolute;    
     top: 80px;
-    left: 22px;
+    left: 22px;    
     width: 268px;
-    height: 472px;  
-     
-}
+    height: 472px;       
+} 
 
 #rsociais {
     text-align: right;
@@ -48,8 +53,17 @@ main {
     margin: 10px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgb(0 0 0 / 40%);
-    box-sizing: border-box;
+    box-sizing: border-box;       
 }
+
+#rsociais img:hover {
+    border: 2px solid #ffffffa2;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 62%);
+    transition: transform .3s, border 1s;
+}
+
+
 
 
 
