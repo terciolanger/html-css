@@ -6,7 +6,7 @@
     padding: 0px;
 }
 
-body {
+html, body {
     height: 100vh;
     width: 100vw;
     background: url('../imagens/fundomadeira.jpg') no-repeat top center;
@@ -19,18 +19,11 @@ main {
     height: 100vh;
 }
 
-/*iframe {
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-} */
-
 #telefone {
     background: url(../imagens/frame-iphone.png) no-repeat;  
     position: absolute;
     top: 50%;
-    left: 43%;
+    left: 50%; /*43%*/
     transform: translate(-50%, -50%);
     height: 627px;
     width: 311px;          
@@ -53,7 +46,7 @@ main {
     top: 60px;
     left: 0px;
     
-    width: 40px;
+    width: 50px; /*40px*/
     margin: 10px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgb(0 0 0 / 40%);
