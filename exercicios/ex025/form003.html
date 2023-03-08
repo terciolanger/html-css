@@ -5,11 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }  
+
+        #area {        
+            width: 100%;  
+            padding-bottom: 20px;         
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            display: block;             
+                   
+        }
+
+        fieldset {            
+            width:583px;
+            height:465px;
+            border-radius: 4px;
+        } 
+        
+        legend {
+            text-align: center;
+        }        
+
+    </style>
 </head>
 <body>
-    <h1>Teste de formulário</h1>
-    <form action="" method="get">
-        
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Teste de Formulário</legend><br> 
+                <label for="icone">Nome</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" value="Jéssica" autocomplete="name"><br><br>               
+                <label for="icone"> Sobrenome</label> 
+                <input type="text" name="snome" id="isnome" required maxlength="30" value="Langer" autocomplete="name" required><br><br>        
+              
+                <label for="idata">Data</label>
+                <input type="date" name="data" id="idata"><br><br>                 
+                    
+                <label for="iglice">Valor da Glicemia</label>
+                <input type="number" name="glice" id="iglice" min="0" max="1000" placeholder="Valor" required>                    
+                    
+                <label for="ihora_a">Horário da Aferição</label>
+                <input type="time" name="hora_a" id="ihora_a"><br><br>             
+                    
+                <label for="ihora">Horário da Aplicação</label>
+                <input type="time" name="hora" id="ihora"><br><br>                  
+                    
+                <label for="i_insu">Nome da Insulina</label>
+                <select name="insu" id="i_insu">
+                    <option value="Humalog">Humalog</option>
+                    <option value="Glargilim">Glargilim</option>
+                    <option value="Lantus">Lantus</option>
+                </select><br><br>                    
+                    
+                <label for="idose">Dose da Insulina</label>
+                <input type="number" name="dose" id="idose" min="0" max="40" placeholder="Dose" step="0.5" required><br><br>
+                <!--step="0.5" aceitar meio em meio-->                
+               
+                <label>Obs.Contagem de Carboidratos</label>
+                <textarea cols="70" rows="3" maxlength="387">               
+                </textarea><br><br>     
+                    
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">              
+        </fieldset> 
     </form>
     
 </body>
