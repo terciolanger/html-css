@@ -9,35 +9,25 @@
         * {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
-            margin: 0px;            
-        }  
-
-        #area {        
-            width: 100vh;
-            padding-bottom: 20px;        
-            border: 2px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            resize: vertical;
-            display: block;             
-                   
-        }
+            margin: 1px;                                  
+        }         
 
         fieldset {                                 
             width: 90vw; /*583*/
-            height: 520px; /*465px;*/
-            border-radius: 4px;                         
+            height: 540px; /*465px;*/
+            border-radius: 4px; 
+            margin-top: 5px;                                               
         } 
 
         legend {
             text-align: center;
+            margin-top: 5px;                         
         }
 
         textarea {
             width: 90vw;
             text-align: justify;
-        }        
-
+        }  
     </style>
 </head>
 <body>    
@@ -50,16 +40,16 @@
                 <input type="text" name="snome" id="isnome" required maxlength="30" value="Langer" autocomplete="name" required><br><br>        
               
                 <label for="idata">Data</label>
-                <input type="date" name="data" id="idata"><br><br>                 
+                <input type="date" name="data" id="idata"><br><br>          
                     
                 <label for="iglice">Valor da Glicemia</label>
-                <input type="number" name="glice" id="iglice" min="0" max="1000" placeholder="Valor" required><br><br>                    
+                <input type="number" name="glice" id="iglice" min="0" max="1000" placeholder="Valor" required><br><br>            
                     
                 <label for="ihora_a">Horário da Aferição</label>
-                <input type="time" name="hora_a" id="ihora_a"><br><br>             
+                <input type="time" name="hora_a" id="ihora_a"><br><br>      
                     
                 <label for="ihora">Horário da Aplicação</label>
-                <input type="time" name="hora" id="ihora"><br><br>                  
+                <input type="time" name="hora" id="ihora"><br><br>          
                     
                 <label for="i_insu">Nome da Insulina</label>
                 <select name="insu" id="i_insu">
