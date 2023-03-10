@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option> 
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <option value="BA">Bahia</option>
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="PE">Pernambuco</option>
+                <option value="CE">Ceará</option>
+                <option value="PA">Pará</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="GO">Goias</option>
+                <option value="MA">Maranhão</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="PB">Paraíba</option>
+                <option value="AM">Amazonas</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="PI">Piauí</option>
+                <option value="AL">Alagoas</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="SE">Sergipe</option>
+                <option value="RO">Rondônia</option>
+                <option value="TO">Tocantins</option>
+                <option value="AC">Acre</option>
+                <option value="AP">Amapá</option>
+                <option value="RR">Roraima</option>                 
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+
+            <datalist id="lstprof"> <!--Pode digitar e escolher a prof-->
+                <option >Adminstrador</option>
+                <option value="tec">Técnico de Informática</option>
+                <option value="prof">Professor</option>
+                <option value="prg">Programador</option>
+                <option value="ana">Analista de Sistemas</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mesangem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+        </p> <!--30 col, 30 letras e vai quebrar. Tem que usar POST. Todo formulário que usar GET tem limte de 3 mil bytes para enviar-->
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
