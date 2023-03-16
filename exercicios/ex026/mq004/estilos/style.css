@@ -10,21 +10,22 @@
         box-sizing: border-box;
     }
 
-    html {               
+    html {  
+        width: 100vw;                  
         height: 100vh;
     }
 
-    body {
-        background: black url('../imagens/back-phone.jpg') no-repeat; 
+    body {       
+        background: black url('../imagens/back-phone.jpg') no-repeat;
         background-size: cover;  
-        background-position: center center;         
+        background-position: center center;                         
     }
 
     main {
         background-color: rgba(255, 255, 255, 0.815);
-        /*min-width: 300px;  
-        max-width: 1000px;*/
-        width: 400px;
+        /*min-width: 360px;  
+        max-width: 360px;  */  
+        width: 400px;   
         margin: auto;
         border-radius: 10px;
         padding: 10px;
@@ -55,7 +56,7 @@
     }
 
     #print {
-        display: none;
+        display: none;                    
     }
 
     #pc {

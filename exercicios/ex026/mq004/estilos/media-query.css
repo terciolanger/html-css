@@ -18,22 +18,47 @@ Laptop e Desktop: 992px até 1200px
 TV - Grandes Telas: Acima de 1200px
 */
 
-/*Media Features*/
+/*
+O professor fez assim em cada um deles
+#phone {display: none;}
+#tablet {display: none;}
+#print {display: none;}
+#pc {display: none;}
+#tv {display: none;} */
+
+/*Media Features */
 @media print {
     body {
-        background-image: url('../imagens/back-print.jpg');        
+        background-image: url('../imagens/back-print.jpg'); /*não imprime*/
     }
 
-    #print {
-        display: block;
+    main {
+        border: 1px solid black;
+        text-align: center; 
+        width: 90vw;
     }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';  
+        font-size: 0.8em; 
+                
+    }
+
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;       
+        color: black;                      
+    }
+    #print {
+        display: block; 
+        text-align: justify;                  
+    } 
+    
 }
 
 @media screen and (min-width: 360px) and (max-width: 768px) {
     body {
         background-image: url('../imagens/back-phone.jpg');        
-    } 
-    
+    }     
     #phone {
         display: block;
     }
@@ -42,8 +67,7 @@ TV - Grandes Telas: Acima de 1200px
 @media screen and (min-width: 769px) and (max-width: 992px) {
     body {
         background-image: url('../imagens/back-tablet.jpg');        
-    } 
-    
+    }     
     #tablet {
         display: block;
     }
@@ -53,7 +77,6 @@ TV - Grandes Telas: Acima de 1200px
     body {
         background-image: url('../imagens/back-pc.jpg');        
     }
-
     #pc {
         display: block;
     }
@@ -63,8 +86,7 @@ TV - Grandes Telas: Acima de 1200px
     body {
         background-image: url('../imagens/back-tv.jpg');        
     }
-
     #tv {
         display: block;
-    }
+    }    
 }
