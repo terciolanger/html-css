@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Media Query</title>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens" style="display: none;">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+            </ul>
+        </menu>       
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2><br><br>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae impedit ipsum veniam porro omnis
+                mollitia incidunt totam nulla cupiditate harum, obcaecati consequuntur modi soluta nostrum sed
+                perferendis in quisquam expedita? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae atque
+                commodi accusantium, laudantium repellat earum perspiciatis officia nobis, debitis ipsa possimus rerum
+                neque maiores animi minus aperiam ducimus accusamus omnis?
+            </p><br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nam illo magnam nihil molestiae vitae
+                nobis possimus quisquam eveniet accusamus, libero, animi, commodi fugit nemo consequatur culpa qui
+                dolorem! Esse.
+            </p><br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odit deserunt aliquam consequatur,
+                quasi reiciendis. Repudiandae blanditiis harum dolore cumque quis rerum sit, asperiores molestias,
+                officia qui voluptatem enim nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iusto
+                mollitia dolorum, eos ullam nam esse nulla quidem inventore blanditiis veritatis, aperiam dolores soluta
+                dolorem eius minima animi! Recusandae, ab. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptate similique itaque aspernatur optio nostrum ipsam laudantium in sed magnam fugiat ut natus
+                laboriosam, provident quo dolores consectetur ducimus libero quibusdam!
+            </p>
+        </article>
+    </main>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }    
+    </script>
+</body>
+
+</html>
