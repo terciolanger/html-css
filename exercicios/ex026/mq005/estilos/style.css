@@ -1,12 +1,11 @@
 @charset "UTF-8"; 
-
-/* fallback */
+/* fallback 
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
     src: url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
-  }  
+  }  */
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -16,7 +15,7 @@
 }
 
 html, body {
-    background-color: rgb(225, 223, 230);
+    background-color: #e1dfe6;
 }
 
 header {
@@ -36,18 +35,23 @@ menu {
     display: none;
 }
 
-menu > ul {
-    list-style-type: none;
+menu ul {
+    list-style-type: none; /*Tira as bolinhas da lista*/
 }
 
-menu > ul > li > a {
+menu a { /*pode fazer menu > ul > li > a */
     display: block;
     padding: 10px;
-    text-decoration: none;
+    text-decoration: none; /*Tirar o Link*/
     text-align: center;
-    background-color: rgb(245, 195, 79);
-    color: rgba(22, 12, 12, 0.726);
-    border-top: 2px solid gray;
+    background-color: #f5c34f;
+    color: #160c0cb9;
+    border-top: 2px solid black; 
+    
+}
+
+menu a:hover {
+    background-color: rgb(224, 233, 146);    
 }
 
 main {
@@ -73,28 +77,21 @@ article > p {
     text-indent: 20px;
 }
 
-i#burguer {
-    background-color: rgb(48, 48, 48);
+#burguer { 
+    background-color: #aca78b;   
     color: white;
     display: block;
     text-align: center;
     padding: 10px;
     cursor: pointer;
+    text-align: left;    
 }
 
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -webkit-font-feature-settings: 'liga';
-    -webkit-font-smoothing: antialiased;
-}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48;         
+    }
 
