@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px) {
+    main {
+        width: 768px;
+    } 
+    
+    #login {
+        width: 768px;
+    }
+
+    #imagem {        
+        transform: translate(-40%, -40%);
+    }
+
+}
