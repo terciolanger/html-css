@@ -8,12 +8,13 @@
     
     section#login {
         width: 60vw;
+        height: 360px;
     }
 
     section#login > div#imagem{
         float: left; /*muda a imagem de posição para Tablet*/
         width: 40%;
-        height: 100%; 
+        height: 360px; /*height: 100%; */
         background: #90be6d url('../imagens/diabetes.jpg') no-repeat;  
         background-position: center center;
         background-size: cover;     
@@ -32,6 +33,7 @@
     
     section#login  {
         width: 700px; 
+        height: 360px;
     }
 
     section#login > div#imagem {
