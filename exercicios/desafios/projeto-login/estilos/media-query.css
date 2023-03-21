@@ -1,16 +1,50 @@
 @charset "UTF-8";
 
-@media screen and (min-width:768px) {
-    main {
-        width: 768px;
-    } 
+@media screen and (min-width: 768px) and (max-width: 992px) { 
+/*7ºpasso - Tablet*/
+    body {
+        background-image: linear-gradient(to top, #90be6d, #f9c64f81)
+    }
     
-    #login {
-        width: 768px;
+    section#login {
+        width: 60vw;
     }
 
-    #imagem {        
-        transform: translate(-40%, -40%);
+    section#login > div#imagem{
+        float: left; /*muda a imagem de posição para Tablet*/
+        width: 40%;
+        height: 100%; 
+        background: #90be6d url('../imagens/diabetes.jpg') no-repeat;  
+        background-position: center center;
+        background-size: cover;     
     }
 
+    section#login > div#formulario {
+        float: right;
+        width: 60%;           
+    } 
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #90be6d, #f9c64f81)
+    }
+    
+    section#login  {
+        width: 700px; 
+    }
+
+    section#login > div#imagem {
+        float: left;   
+        width: 50%;
+        height: 100%;
+        background: #90be6d url('../imagens/diabetes4.jpg') no-repeat;  
+        background-position: center center;
+        background-size: cover; 
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 50%;
+    }    
 }
