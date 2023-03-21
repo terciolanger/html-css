@@ -24,6 +24,18 @@
         float: right;
         width: 60%;           
     } 
+
+    section#login > div#formulario h1 {        
+        font-size: 1.9em;    
+    }
+    
+    section#login > div#formulario p {        
+        font-size: 1.1em;    
+    }
+
+    form > div.campo > input {
+        font-size: 1.1em;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -48,5 +60,17 @@
     section#login > div#formulario {
         float: right;
         width: 50%;
+    }
+    
+    section#login > div#formulario h1 {        
+        font-size: 2em;    
+    }
+    
+    section#login > div#formulario p {        
+        font-size: 1.1em;    
+    }
+
+    form > div.campo > input {
+        font-size: 1.1em;
     }    
 }
