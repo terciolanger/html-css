@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*Display Flex trata das caixas dentro de outra caixa
+Display Block vai ocupar toda a linha, fica em baixo
+Display Inline ocupa o tamanho do espaço da caixa, fica lado a lado*/
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;  /*Reset na medida na caixa do navegador*/  
+}
+
+body {
+    font-size: 1.6em;
+}
+
+a {
+    text-decoration: none;    
+}
+
+.button {
+    display : inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.6rem;
+    background: blue;
+    border-radius: 10px;
+    color: white;
+}
+
+nav {
+    display: flex; /*Para colocar os elementos um do lado do outro*/
+    /* flex-direction: column - Mudar para coluna*/
+    justify-content: space-between;/*Coloca um elemento no início e o outro elemento no final, com espaço entre eles (Caixas)*/
+    align-items: center; /*main axis."Eixo Principal" para alinhar no centro dos elementos*/
+}
+
+ul {
+    display: flex;
+    list-style: none; /* tiras as bolinhas*/
+}
+
