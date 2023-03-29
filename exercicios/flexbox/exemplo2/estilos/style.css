@@ -8,13 +8,30 @@
 
 .menu {
     display: flex;
+    flex-wrap: wrap; /*passar para a prócima linha*/
     list-style-type: none;
+    margin-left: 10px;
+    
 }
 
 .menu_itens {
-
+    flex: 1 1 200px;/*Cada item ocupará o máximo de espaço disponível divido na proporção nenhun item vai ter tamanho menor que 200px*/
+    margin: 5px;
+    padding: 0;      
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.menu_links{
+.menu_links {    
+    color:blue; 
+    display: block;
+    padding: 20px; 
+    text-decoration: none;  
+}
 
+@media (min-width: 53.125em) { /*850px*/
+    .menu_iten {
+        flex-basis: 100px;     
+    }
 }
