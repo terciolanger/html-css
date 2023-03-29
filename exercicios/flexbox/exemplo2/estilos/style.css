@@ -10,17 +10,19 @@
     display: flex;
     flex-wrap: wrap; /*passar para a prócima linha*/
     list-style-type: none;
-    margin-left: 10px;
-    
+    margin-left: 10px;    
 }
 
 .menu_itens {
     flex: 1 1 200px;/*Cada item ocupará o máximo de espaço disponível divido na proporção nenhun item vai ter tamanho menor que 200px*/
     margin: 5px;
-    padding: 0;      
+    padding: 10px;      
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /*eixo*/
+    justify-content: center;  
+    background-color: #f5c34f;
+    color: #160c0cb9;
+    border: 2px solid black; 
 }
 
 .menu_links {    
