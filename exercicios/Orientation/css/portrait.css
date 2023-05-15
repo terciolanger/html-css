@@ -1,0 +1,7 @@
+/* For portrait, we want the toolbar on top */
+
+@media screen and (orientation: portrait) {
+    #toolbar {
+      width: 100%;
+    }
+  }
